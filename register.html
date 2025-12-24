@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salorid | Create Account</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">SALORID<span>.</span></div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="buy.html">Pricing</a>
+            <a href="docs.html">Docs</a>
+            <a href="login.html" class="btn btn-secondary" style="padding: 0.5rem 1.2rem; margin: 0;">Login</a>
+        </div>
+    </nav>
+
+    <main class="auth-wrapper">
+        <div class="auth-box reveal">
+            <div class="auth-header" style="text-align: center; margin-bottom: 2rem;">
+                <h2>Create Account</h2>                <p style="color: var(--text-muted); font-size: 0.9rem;">Join the elite players using Salorid.</p>
+            </div>
+
+            <form id="registerForm" onsubmit="handleAuthSubmit(event)">
+                <div class="input-group">
+                    <input type="text" id="regUser" placeholder="Username" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="regEmail" placeholder="Email Address" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="authPassword" placeholder="Password" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="authConfirmPassword" placeholder="Confirm Password" required>
+                </div>
+                
+                <div class="checkbox-group">
+                    <input type="checkbox" id="authTerms" required>
+                    <label for="authTerms">I agree to the Terms of Service</label>
+                </div>
+
+                <button type="submit" id="authBtn" class="btn btn-primary" style="width: 100%;">Sign Up</button>
+            </form>
+
+            <div class="auth-footer" style="text-align: center; margin-top: 2rem;">
+                <p style="font-size: 0.9rem; color: var(--text-muted);">
+                    Already have an account? 
+                    <a href="login.html" style="color: var(--accent); text-decoration: none; font-weight: 600;">Login here</a>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

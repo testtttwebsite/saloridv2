@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salorid | Settings</title>    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dash-body">
+    <nav>
+        <div class="logo">SALORID<span>.</span></div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="buy.html">Pricing</a>
+            <a href="docs.html">Docs</a>
+            <a href="login.html" class="btn btn-secondary" style="padding: 0.5rem 1.2rem; margin: 0;">Logout</a>        </div>
+    </nav>
+
+    <div class="dash-container">
+        <aside class="dash-sidebar">
+            <div class="sidebar-group">
+                <h3>Main</h3>
+                <a href="index.html" class="sidebar-link">Home</a>
+                <a href="dashboard.html" class="sidebar-link">Overview</a>
+                <a href="docs.html" class="sidebar-link">Documentation</a>
+            </div>
+            <div class="sidebar-group">
+                <h3>Account</h3>
+                <a href="settings.html" class="sidebar-link active">Settings</a>
+                <a href="login.html" class="sidebar-link">Logout</a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="dash-main">
+            <header class="dash-header">                <div>
+                    <h1>Account Settings</h1>
+                    <p style="color: var(--text-muted);">Manage your profile and client security.</p>
+                </div>
+            </header>
+
+            <div class="settings-grid">
+                <section class="dash-card">
+                    <h3>Profile Information</h3>
+                    <form onsubmit="handleSettingsSave(event)">
+                        <div class="input-group">
+                            <label style="font-size: 0.8rem; color: var(--text-muted);">Username</label>
+                            <input type="text" value="SaloridUser">
+                        </div>
+                        <div class="input-group">
+                            <label style="font-size: 0.8rem; color: var(--text-muted);">Email Address</label>
+                            <input type="email" value="user@example.com">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Save Changes</button>
+                    </form>
+                </section>
+
+                <section class="dash-card">
+                    <h3>Security</h3>
+                    <form onsubmit="handleSettingsSave(event)">
+                        <div class="input-group">                            <input type="password" placeholder="Current Password">
+                        </div>
+                        <div class="input-group">
+                            <input type="password" placeholder="New Password">
+                        </div>
+                        <button type="submit" class="btn btn-secondary">Update Password</button>
+                    </form>
+                </section>
+
+                <section class="dash-card danger-zone">
+                    <h3 style="color: var(--error);">Client Management</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+                        Resetting your HWID allows you to use the client on a different computer. This can be done once every 24 hours.
+                    </p>
+                    <div class="profile-item">
+                        <span>Current HWID</span>
+                        <p style="font-family: monospace; font-size: 0.8rem;">placeholder</p>
+                    </div>
+                    <button class="btn btn-secondary" onclick="resetHWID()" style="border-color: var(--error); color: var(--error);">Reset HWID</button>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

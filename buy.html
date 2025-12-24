@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salorid | Pricing & Plans</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">SALORID<span>.</span></div>        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="buy.html">Pricing</a>
+            <a href="docs.html">Docs</a>
+            <a href="login.html" class="btn btn-secondary" style="padding: 0.5rem 1.2rem; margin: 0;">Login</a>
+        </div>
+    </nav>
+
+    <section style="text-align: center; padding-top: 8rem;">        <h1 class="reveal" style="font-size: 3.5rem; margin-bottom: 1rem;">Choose Your Plan</h1>
+        <p class="reveal" style="color: var(--text-muted); margin-bottom: 4rem;">Get instant access to the most powerful minecraft cheat client.</p>
+        
+        <div class="pricing-grid">
+            <div class="price-card reveal">
+                <h3>Monthly</h3>
+                <div class="price-value">$9.99<span>/mo</span></div>
+                <ul class="feature-list">
+                    <li>Placeholder</li>
+                    <li>Placeholder</li>
+                    <li>Placeholder</li>
+                    <li>Placeholder</li>
+                </ul>
+                <button class="btn btn-secondary" style="width: 100%" onclick="processPayment('Monthly')">Get Started</button>
+            </div> 
+            <div class="price-card featured reveal" style="animation-delay: 0.1s">
+                <div style="position: absolute; top: 20px; right: 20px; background: var(--accent); font-size: 0.7rem; padding: 4px 10px; border-radius: 20px; font-weight: 800;">BEST VALUE</div>
+                <h3>Lifetime</h3>
+                <div class="price-value">$29.99<span>once</span></div>
+                <ul class="feature-list">
+                    <li>Placeholder</li>
+                    <li>Placeholder</li>
+                    <li>Placeholder</li>
+                    <li>Placeholder</li>
+                    <li>Placeholder</li>
+                </ul>
+                <button class="btn btn-primary" style="width: 100%" onclick="processPayment('Lifetime')">Buy Lifetime</button>
+            </div>
+
+            <div class="price-card reveal" style="animation-delay: 0.2s">
+                <h3>Yearly</h3>
+                <div class="price-value">$19.99<span>/yr</span></div>
+                <ul class="feature-list">
+                    <li>Placeholder</li>
+                    <li>Placeholder</li>
+                    <li>Placeholder</li>
+                    <li>Placeholder</li>
+                </ul>
+                <button class="btn btn-secondary" style="width: 100%" onclick="processPayment('Yearly')">Select Yearly</button>
+            </div>
+        </div>
+    </section>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

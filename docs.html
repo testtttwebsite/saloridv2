@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salorid | Documentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dash-body">
+    <nav>
+        <div class="logo">SALORID<span>.</span></div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="buy.html">Pricing</a>
+            <a href="docs.html">Docs</a>
+            <a href="login.html" class="btn btn-secondary" style="padding: 0.5rem 1.2rem; margin: 0;">Login</a>
+        </div>
+    </nav>
+
+    <div class="dash-container">
+        <aside class="dash-sidebar">
+            <div class="sidebar-group">
+                <div class="search-container" style="margin-bottom: 1.5rem; padding: 0 1rem;">
+                    <input type="text" id="docSearch" placeholder="Search docs..." onkeyup="searchDocs()" style="margin-bottom: 0; padding: 0.7rem;">
+                </div>
+                <h3>Getting Started</h3>
+                <a href="#installation" class="sidebar-link active">Installation</a>
+                <a href="#keybinds" class="sidebar-link">Keybinds</a>
+            </div>
+            <div class="sidebar-group">
+                <h3>Modules</h3>
+                <a href="#combat" class="sidebar-link">Combat</a>
+                <a href="#visuals" class="sidebar-link">Visuals</a>
+                <a href="#movement" class="sidebar-link">Movement</a>
+            </div>
+            <div class="sidebar-group">
+                <h3>Support</h3>
+                <a href="#faq" class="sidebar-link">FAQ</a>
+                <a href="#hwid" class="sidebar-link">HWID Resets</a>
+            </div>
+        </aside>
+
+        <main class="dash-main docs-content">            <section id="installation" class="doc-section">
+                <h1>Installation</h1>
+                <p>Follow these steps to get Salorid Client running on your machine.</p>
+                <div class="code-block">                    <ol>
+                        <li>Download the <code>Salorid_Launcher.exe</code> from your dashboard.</li>
+                        <li>Run the installer as Administrator.</li>
+                        <li>Log in using your account credentials.</li>
+                        <li>Select your desired Minecraft version and click <b>Launch</b>.</li>
+                    </ol>
+                </div>
+            </section>
+
+            <hr class="doc-divider">
+
+            <section id="keybinds" class="doc-section">
+                <h2>Keybinds</h2>
+                <p>Default controls for navigating the client interface.</p>
+                <table class="docs-table">
+                    <thead>
+                        <tr>
+                            <th>Action</th>
+                            <th>Keybind</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Open ClickGUI</td>
+                            <td><kbd>R-SHIFT</kbd></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <hr class="doc-divider">
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

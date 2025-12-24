@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salorid | Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dash-body">    <nav>
+        <div class="logo">SALORID<span>.</span></div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="buy.html">Pricing</a> 
+            <a href="docs.html">Docs</a>
+            <a href="login.html" class="btn btn-secondary" style="padding: 0.5rem 1.2rem; margin: 0;">Logout</a>
+        </div>    </nav>
+
+    <div class="dash-container">
+        <aside class="dash-sidebar">
+            <div class="sidebar-group">
+                <h3>Main</h3>
+                <a href="index.html" class="sidebar-link">Home</a>
+                <a href="dashboard.html" class="sidebar-link active">Overview</a>
+                <a href="docs.html" class="sidebar-link">Documentation</a>
+            </div>
+            <div class="sidebar-group">
+                <h3>Account</h3>
+                <a href="settings.html" class="sidebar-link">Settings</a>
+                <a href="login.html" class="sidebar-link">Logout</a>
+            </div>
+        </aside>
+
+        <main class="dash-main">
+            <header class="dash-header">
+                <div>
+                    <h1>Welcome, <span id="dash-username">User</span></h1>
+                    <p style="color: var(--text-muted);">Manage your subscriptions and downloads.</p>
+                </div>
+            </header>
+
+            <div class="dash-grid">
+                <div class="dash-card wide product-card">                    <div class="product-info">
+                        <div class="product-icon">S</div>
+                        <div>
+                            <h2>Salorid Client</h2>
+                            <p style="color: var(--success); font-weight: 600;">Status: Undetected</p>
+                        </div>
+                    </div>
+                    <div class="product-meta">
+                        <div class="meta-item">
+                            <span>Version</span>
+                            <p>v2.4.1</p>
+                        </div>
+                        <div class="meta-item">
+                            <span>Subscription</span>
+                            <p>Lifetime</p>
+                        </div>
+                    </div>
+                    <button id="downloadBtn" class="btn btn-primary" style="width: 100%; margin-top: 1.5rem;" onclick="simulateDownload()">Download Launcher</button>
+                </div>
+
+                <div class="dash-card">
+                    <h3>Profile Overview</h3>
+                    <div class="profile-item">
+                        <span>Email</span>
+                        <p>user@example.com</p>
+                    </div>
+                    <div class="profile-item">
+                        <span>Join Date</span>
+                        <p>jan 1, 2025</p>
+                    </div>
+                    <div class="profile-item">
+                        <span>Last Login</span>                        <p>2 hours ago</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
